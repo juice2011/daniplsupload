@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>DANI PLS UPLOAD</title>
+        
+        <script>
+            Function Start()
+            {
+                $.ajax({
+                url: "main.py",
+                context: document.body
+            })
+            }
+        </script>        
+        
+        <style>
+            
+            h1{
+               color:aqua;
+                
+               text-align: center;
+               font-size:50px;
+               font-family:monospace;
+            }
+            #start{
+                background-color:aqua;
+                margin: 0;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                font-size: 40px;
+                font-family:monospace;
+            }
+            #end{
+                background-color:aqua;
+                margin: 0;
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                font-size: 40px;
+                font-family:monospace;
+            }
+            body{
+                background-color:black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>DANI WHY CAN YOU NOT UPLOAD</h1>
+        <button id="start" onclick="Start()">Start</button>
+        <button id="end">End</button>
+    </body>
+</html>
